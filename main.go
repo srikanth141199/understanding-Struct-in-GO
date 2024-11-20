@@ -35,8 +35,9 @@ func main() {
 		},
 	}
 
-	KrishPointer := &Krish
-	KrishPointer.updateName("Krishna")
+	// KrishPointer := &Krish
+	// KrishPointer.updateName("Krishna")
+	Krish.updateName("Krishna")
 	Krish.print()
 }
 
