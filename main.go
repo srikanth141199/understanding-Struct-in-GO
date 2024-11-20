@@ -5,6 +5,12 @@ import "fmt"
 type person struct {
 	firstName string
 	lastName  string
+	contact   contractInfo
+}
+
+type contractInfo struct {
+	email   string
+	zipCode int
 }
 
 func main() {
@@ -17,7 +23,15 @@ func main() {
 	fmt.Println(ram)
 	fmt.Printf("%+v", ram)
 	//diff way
-
-	Krish := person{"Krish", "K"}
+	Krish := person{"Krish", "K", contractInfo{"sri@sri.com", 1234}}
 	fmt.Println(Krish)
+
+	// Krish := person{
+	// 	"Krish",
+	// 	"K",
+	// 	contractInfo{
+	// 		"sri@sri",
+	// 		1234,
+	// 	},
+	// }
 }
